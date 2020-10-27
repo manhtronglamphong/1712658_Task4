@@ -13,9 +13,11 @@ function Board() {
         fetchMyData();
       }, []);
     return (
-        <ul class="list-group">
+        <ul className="list-group">
+            Danh sách các Board của người dùng
+          <br/><br/>
           {data.map(item => (
-            <li class='list-group-item'>
+            <li className='list-group-item'>
               {'id: '+item.id+' Username: '+item.username+' Name: '+item.name}
             </li>
           ))}
